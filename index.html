@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="/icon.png">
+
     <title>Portfolio - Tien Nguyen</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
                 </h1>
                 
 
-                <a href="#" class="button">Contact</a>
+                <a href="#contact" class="button">Contact</a>
             </div>
 
             <div class="home__social">
@@ -145,7 +146,7 @@
                 </div>
                 
                 <div>              
-                    <img src="work3.jpg" alt="" class="skills__img">
+                    <img src="img1.jpg" alt="" class="work__img">
                 </div>
             </div>
         </section>
@@ -155,51 +156,70 @@
             <h2 class="section-title">Projects</h2>
 
             <div class="work__container bd-grid">
-                <a href="" class="work__img">
-                    <img src="work1.jpg" alt="">
+                <a href="javascript:void(0)" class="work__img">
+                    <img src="img4.jpg" alt="" id="project1">
                 </a>
-                <a href="" class="work__img">
-                    <img src="work2.jpg" alt="">
+                <a href="javascript:void(0)"  class="work__img">
+                    <img src="img3.JPG" alt="" id="project2">
                 </a>
-                <a href="" class="work__img">
-                    <img src="work3.jpg" alt="">
+                <a href="javascript:void(0)"  class="work__img">
+                    <img src="img2.JPG" alt="" id="project3">
                 </a>
-                <a href="" class="work__img">
-                    <img src="work4.jpg" alt="">
+                <a href="javascript:void(0)" class="work__img">
+                    <img src="img5.jpg" alt="">
                 </a>
-                <a href="" class="work__img">
+                <!-- <a href="javascript:void(0)" class="work__img">
                     <img src="work5.jpg" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="work6.jpg" alt="">
+                <a href="javascript:void(0)" class="work__img">
+                    <img src="work6.jpg" alt=""> -->
                 </a>
             </div>
         </section>
+        <!-- Modal projects -->
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
+                <!-- <form action="" class="contact__form">
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
                     <input type="button" value="Send" class="contact__button button">
-                </form>
+                </form> -->
+<form action="https://formspree.io/f/xleqdpen" method="POST" class="contact__form">
+                    <input type="text" placeholder="Your Name" class="contact__input" name="name" required>
+                    <input type="mail" placeholder="Your Email" class="contact__input" name="email" required>
+                    <textarea name="message"  placeholder="Message" cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="submit" value="Send" class="contact__button button">
+</form>
             </div>
         </section>
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-        <p class="footer__title">Marlon</p>
+        <p class="footer__title">NGUYEN MINH TIEN</p>
         <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/nmt0899" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/nguyenminhtien.1008" target="_blank" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://github.com/" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
         </div>
-        <p class="footer__copy">&#169; CodeCraftedWeb. All rights reserved</p>
+        <p class="footer__copy">&#169; From Tien With Love. All rights reserved</p>
     </footer>
 
 
